@@ -1,0 +1,106 @@
+.header{
+    max-width: 100vw;
+    background-color: var(--bg-primario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo{
+    padding: 10px;
+}
+.header__logo--img{
+    width: 80px;
+}
+.header__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    min-width: 60%;
+    padding: 10px;
+}
+.header__nav-content{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;
+    font-family: var(--font-primaria);
+    font-weight: 600;
+}
+.header__nav-items{
+    color: var(--bg-secundario);
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+.header__nav-items--active{
+    color:var(--c-primario);
+    border-radius: 5px;
+}
+.header__nav-items:hover{
+    color: var(--c-primario);
+}
+.header__nav-redes{
+    display: flex;
+    gap: 10px;
+    color: var(--c-cuarto);
+}
+.header__nav-redes .fa-square-whatsapp:hover{
+    color:#25D366;
+}
+.header__nav-redes .fa-square-instagram:hover{
+    color: #ee2a7b;
+}
+.header__nav-redes .fa-square-facebook:hover{
+    color: #1877f2;
+}
+.header__nav-redes__red{
+    font-size: 25px;
+}
+.header__menu{
+    display: none;
+    font-size: 30px;
+    padding: 10px;
+    position: relative;
+    z-index:111;
+    color: var(--c-cuarto);
+}
+.header__menu:hover{
+    color: var(--c-primario);
+    transition: color 0.2s ease;
+}
+.header__menu-bar-active .header__menu{
+    color: var(--c-primario);
+}
+
+
+@media (max-width:760px) {
+    .header__logo{
+        position: relative;
+        z-index: 1111;
+    }
+    .header__menu{
+        display: block;
+    }
+    .header__nav{
+        background-color: var(--bg-primario);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        top: 0px;
+        transform: translateY(-100%);
+        z-index: 111;
+        transition: transform 0.3s ease;
+        opacity: 0;
+    }
+    .header__nav-content{
+        flex-direction: column;
+    }
+    .header__menu-bar-active .header__nav{
+        opacity: 1;
+        transform: translateY(0%);
+        
+    }
+    
+}

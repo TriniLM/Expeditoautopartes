@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --c-primario:#db0501;
+    --c-secundario:#104789;
+    --c-terciario:#EC9B3B;
+    --c-cuarto:#7D7C7C;
+    --bg-primario:#F9F9F9;
+    --bg-secundario:#222831;
+    --font-primaria: "Lato", sans-serif;
+    --font-secundaria: "Montserrat", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    position: relative;
+}
