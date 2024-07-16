@@ -2,12 +2,13 @@
     overflow: hidden;
     background-color: var(--bg-primario);
     max-width: 100vw;
-    max-height: 500px;
     display: flex;
     padding: 20px;
     justify-content: space-evenly;
     align-items: center;
     position: relative;
+    flex-wrap: wrap;
+    gap: 100px;
 }
 .shipping-info__text{
   max-width: 430px;
@@ -23,8 +24,8 @@
     border-radius:100%;
     background-color:var(--c-secundario);
     position: absolute;
-    left: -10px;
-    bottom:-20px;
+    left: 5px;
+    bottom:0px;
     z-index: 1;
 }
 .shipping-info__text-title{
@@ -32,7 +33,7 @@
     font-family: var(--font-primaria);
     font-weight: 700;
     color: var(--bg-secundario);
-    text-transform:uppercase;
+    text-transform:capitalize;
 }
 .shipping-info-text-subtitle{
     font-size: 1.3rem;
@@ -41,7 +42,7 @@
     letter-spacing: 2px;
     text-transform:uppercase;
 }
-.shipping-info__text-parrafo{
+.shipping-info__text-paragraph{
     font-size: 1.1rem;
     font-family: var(--font-secundaria);
     font-weight: 500;
@@ -69,7 +70,7 @@
    height: 600px;
    background-color: var(--c-primario);
    position: absolute;
-   right: -200px;
+   right: -240px;
    top: -120px;
    border-radius:100%;
    z-index: 11;
@@ -81,8 +82,8 @@
     border-radius:100%;
     background-color:var(--c-terciario);
     position: absolute;
-    right: 350px;
-    top: 50px;
+    right: 320px;
+    top: 40px;
     z-index: 1;
 }
 .shipping-info__img-imagen{

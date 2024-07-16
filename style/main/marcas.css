@@ -1,0 +1,68 @@
+.marcas{
+    width: 100%;
+    background-color:var(--bg-primario);
+}
+.marcas-text{
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+.marcas-text__title{
+    font-size: 2.5rem;
+    font-family: var(--font-primaria);
+    color: var(--bg-secundario);
+    letter-spacing: 3px;
+}
+.marcas-text__title span{
+    color: var(--c-primario);
+    font-weight: 800;
+}
+.marcas-text__paragraph{
+    color: var(--c-cuarto);
+    font-family: var(--font-secundaria);
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: left;
+    margin: 10px;
+}
+.marcas-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.marcas-cards__card{
+    background-color: var(--bg-primario);
+    width: 350px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.13);
+    border-radius: 20px;
+}
+.marcas-cards__card-img{
+    width:70%;
+}
+
+.card-text__title{
+    font-size: 1.5rem;
+    font-family: var(--font-primaria);
+    color: var(--c-cuarto);
+    margin: 10px 0px;
+}
+.card-text__paragraph{
+    font-size: 1.1rem;
+    font-family: var(--font-secundaria);
+    font-weight: 500;
+    color: var(--c-cuarto);
+}
+.card-text__btn{
+    margin: 20px 0px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--c-terciario);
+    color: var(--bg-primario);
+    font-weight: 600;
+    font-size: 1rem;
+}
