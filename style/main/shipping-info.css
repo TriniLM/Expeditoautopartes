@@ -3,7 +3,7 @@
     background-color: var(--bg-primario);
     max-width: 100%;
     display: flex;
-    padding:0px;
+    padding:50px;
     justify-content: space-evenly;
     align-items: center;
     position: relative;

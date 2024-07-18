@@ -11,16 +11,26 @@
     --c-terciario:#EC9B3B;
     --c-cuarto:#7D7C7C;
     --bg-primario:#F9F9F9;
-    --bg-secundario:#222831;
+    --bg-secundario:#171b22;
     --font-primaria: "Lato", sans-serif;
     --font-secundaria: "Montserrat", sans-serif;
 }
 a{
     text-decoration: none;
+    color: inherit;
 }
 li{
     list-style: none;
 }
 body{
     position: relative;
+}
+.whatsapp-icon{
+    position: fixed;
+    z-index: 1111111;
+    bottom: 30px;
+    right: 30px;
+}
+.whatsapp-icon img{
+    width: 80px;
 }

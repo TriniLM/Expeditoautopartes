@@ -1,0 +1,72 @@
+.footer{
+    width: 100%;
+    background-color: var(--bg-secundario);
+    color: var(--bg-primario);
+}
+.footer-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.footer-info__section{
+    flex-basis: 250px;
+    font-family: var(--font-secundaria);
+}
+.footer-info__section h3{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    font-family: var(--font-primaria);
+}
+.footer-info__section-adress{
+    font-size: 1rem;
+    position: relative;
+}
+.footer-info__section-adress::before{
+    position: absolute;
+    left: -25px;
+    content: "\f276"; 
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    font-size: 24px; 
+    top: 5px;
+    color:var(--c-terciario); 
+}
+.foo-contact{
+    color: var(--bg-primario);
+    position: relative;
+    margin-bottom: 8px;
+}
+.contact-number::before{
+    position: absolute;
+    left: -30px;
+    content: "\f095"; 
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    font-size: 20px; 
+    color:var(--c-terciario); 
+}
+.contact-email::before{
+    position: absolute;
+    left: -30px;
+    content: "\f0e0"; 
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    font-size: 20px; 
+    color:var(--c-terciario);
+}
+.footer-info__section-houre{
+    position: relative;
+}
+.footer-info__section-houre::before{
+    position: absolute;
+    left: -30px;
+    top: 5px;
+    content: "\f017"; 
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    font-size: 20px; 
+    color:var(--c-terciario); 
+}
