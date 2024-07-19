@@ -17,7 +17,7 @@
 .header__nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 30px;
     min-width: 60%;
     padding: 10px;
@@ -47,6 +47,10 @@
     display: flex;
     gap: 10px;
     color: var(--c-cuarto);
+    align-items: center;
+}
+.header__nav-redes i{
+    font-size: 30px;
 }
 .header__nav-redes .fa-square-whatsapp:hover{
     color:#25D366;

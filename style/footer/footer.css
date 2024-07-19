@@ -70,3 +70,16 @@
     font-size: 20px; 
     color:var(--c-terciario); 
 }
+.footer-foo{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: var(--font-primaria);
+}
+
+.footer-copy__creador{
+    color: var(--c-terciario);
+    margin: 10px;
+}

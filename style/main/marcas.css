@@ -36,12 +36,16 @@
 .marcas-cards__card{
     background-color: var(--bg-primario);
     width: 300px;
-    padding: 10px;
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.13);
-    border-radius: 20px;
+    box-shadow: 0px 0px 10px 1px rgba(70, 70, 70, 0.13);
+    padding: 30px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
 }
 .marcas-cards__card-img{
-    width:70%;
+    width:150px;
 }
 
 .card-text__title{
@@ -61,7 +65,7 @@
     padding: 8px 20px;
     border-radius: 20px;
     border: none;
-    background-color: var(--c-terciario);
+    background-color: var(--c-secundario);
     color: var(--bg-primario);
     font-weight: 600;
     font-size: 1rem;
