@@ -1,0 +1,90 @@
+.product-hot{
+    width: 100%;
+    background-color:var(--bg-primario);
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-hot-content{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.377);
+}
+.product-hot__img{
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    background: linear-gradient(135deg, #f3f3f3 25%, transparent 25%) -50px 0,
+                        linear-gradient(225deg, #f3f3f3 25%, transparent 25%) -50px 0,
+                        linear-gradient(315deg, #f3f3f3 25%, transparent 25%),
+                        linear-gradient(45deg, #f3f3f3 25%, transparent 25%);
+                        background-color: var(--c-secundario);
+    background-size: 100px 100px;
+}
+.product-hot__img img{
+    width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-hot__info{
+    width: 50%;
+    height: 100%;
+}
+.product-hot__img-title{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: var(--font-primaria);
+    color: var(--bg-secundario);
+}
+.product-hot__info-details h4{
+    font-size: 1.1rem;
+    font-family: var(--font-secundaria);
+    margin-top: 10px;
+    color: var(--c-cuarto);
+}
+.product-hot__info-details span{
+    font-family: var(--font-secundaria);
+    color: var(--bg-secundario);
+}
+.product-hot__info-btn button{
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    color: var(--bg-primario);
+    background-color: var(--c-primario);
+    font-family: var(--font-primaria);
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-weight: 700;
+}
+.product-hot__btn{
+    position: absolute;
+    width: 100%;
+    z-index: 11;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.product-hot__btn button{
+    width: 40px;
+    height: 80px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--bg-secundario);
+    color: var(--bg-primario);
+    font-size: 30px;
+}
+.product-hot__btn button:hover{
+    background-color: var(--c-primario);
+}
