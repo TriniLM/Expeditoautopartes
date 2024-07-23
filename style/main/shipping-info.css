@@ -1,6 +1,5 @@
 .shipping-info{
     overflow: hidden;
-    background-color: var(--bg-primario);
     max-width: 100%;
     display: flex;
     padding:50px;
@@ -8,35 +7,24 @@
     align-items: center;
     position: relative;
     flex-wrap: wrap;
-    gap: 100px;
+    background-color: var(--bg-secundario);
 }
 .shipping-info__text{
   max-width: 430px;
   padding: 10px;
   position: relative;
 }
-.shipping-info::after{
-    content: "";
-    width: 100px;
-    height: 100px;
-    border-radius:100%;
-    background-color:var(--c-secundario);
-    position: absolute;
-    left: 5px;
-    bottom:0px;
-    z-index: 1;
-}
 .shipping-info__text-title{
     font-size: 2rem;
     font-family: var(--font-primaria);
     font-weight: 700;
-    color: var(--bg-secundario);
+    color: var(--bg-primario);
     text-transform:capitalize;
 }
 .shipping-info-text-subtitle{
     font-size: 1.3rem;
     font-family: var(--font-primaria);
-    color: var(--c-secundario);
+    color: var(--c-terciario);
     letter-spacing: 2px;
     text-transform:uppercase;
 }
@@ -44,49 +32,29 @@
     font-size: 1.1rem;
     font-family: var(--font-secundaria);
     font-weight: 500;
-    color: var(--c-cuarto);
+    color: var(--bg-primario);
     margin: 15px 0px;
 }
 .shipping-info-btn{
     padding: 8px 20px;
     border-radius: 20px;
     border: none;
-    background-color: var(--c-primario);
     color:var(--bg-primario);
     font-size: 1.1rem;
     font-weight: 600;
     font-family: var(--font-primaria);
+    background-color: red;
 }
 
 .shipping-info__img{
-    position: relative;
-    width: 500px;
-    height: 500px;
-}
-.shipping-info__img-figure{
-   width: 600px;
-   height: 600px;
-   background-color: var(--c-primario);
-   position: absolute;
-   right: -240px;
-   top: -120px;
-   border-radius:100%;
-   z-index: 11;
-}
-.shipping-info__img::after{
-    content: "";
-    width: 100px;
-    height: 100px;
-    border-radius:100%;
-    background-color:var(--c-terciario);
-    position: absolute;
-    right: 320px;
-    top: 40px;
-    z-index: 1;
+    width: 700px;
+    height:auto;
+    padding-bottom: 50px;
 }
 .shipping-info__img-imagen{
-    width: 550px;
+    width: 100%;
+}
+.shipping-wave{
     position: absolute;
-    right:200px;
-    bottom: -50px;
+    bottom: -20px;
 }

@@ -27,16 +27,17 @@
 }
 .slider__slides{
     width: 100%;
-    max-height: 600px;
+    max-height: 500px;
     height: auto;
     display: flex;
+    align-items: ce;
     transition: transform cubic-bezier(.02,.57,.63,.29) 1s;
 }
 .slider__slide{
     min-width: 100%;
     height: 100%;
-    /*para borrar*/
-    color: white;
+    display: flex;
+    align-items: center;
 }
 .slider__slide img{
     width: 100%;
