@@ -1,0 +1,109 @@
+.about-me{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+/*About me*/
+.about-me__figure{
+    max-width: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.about-me__figure-img{
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+.about-me__info{
+    width: 50%;
+}
+.about-me__info-title{
+    font-size: 2.5rem;
+    font-family: var(--font-primaria);
+    font-weight: 800;
+    color: var(--c-primario);
+    margin: 10px 0px;
+}
+.about-me__info-text{
+    font-size: 1.3rem;
+    font-family: var(--font-secundaria);
+}
+/*Leaders*/
+.lead{
+
+}
+.nosotros__title{
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: var(--font-primaria);
+    color: var(--c-primario);
+    font-weight: 800;
+    margin: 10px 0px;
+}
+.nosotros__title span{
+    color: var(--bg-secundario);
+}
+.lead-leaders{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 20px 0px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.lead__img-conten{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+.lead__img-content-img{
+    object-fit: cover;
+    width: 100%;
+}
+.lead__nom{
+    font-size: 1.5rem;
+    font-family: var(--font-primaria);
+    color: var(--c-primario);
+}
+.lead__nom-position{
+    font-size: 1.2rem;
+    font-family: var(--font-secundaria);
+    color: var(--c-cuarto);
+}
+/*identity*/
+.identity{
+
+}
+.identity__conten{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.identity__conten-card{
+    max-width: 250px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.377);
+    margin: 20px 0px;
+}
+.conten-card__img{
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: var(--font-secundaria);
+}
+.conten-card__img img{
+    width: 100px;
+    margin-top: 10px;
+}
+.conten-card__text{
+    font-size: 1rem;
+    margin: 10px 5px;
+    font-family: var(--font-secundaria);
+    text-align: justify;
+}

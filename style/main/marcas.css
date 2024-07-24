@@ -47,13 +47,13 @@
 }
 
 .card-text__title{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: var(--font-primaria);
     color: var(--c-cuarto);
     margin: 5px 0px;
 }
 .card-text__paragraph{
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: var(--font-secundaria);
     font-weight: 500;
     color: var(--c-cuarto);
