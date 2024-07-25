@@ -1,0 +1,75 @@
+.banner{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.banner-img{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+.banner-img__img{
+    width: 100%;
+    object-fit:cover;
+    aspect-ratio: 20/9;
+    filter:brightness(.3);
+}
+.banner-info{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.banner-info__title{
+    font-family: var(--font-primaria);
+    font-size:clamp(15px, 4vw + 1rem, 60px);
+    font-weight: 800;
+    color: var(--bg-primario);
+}
+.banner-info__subtitle{
+    font-family: var(--font-secundaria);
+    font-size:clamp(20px, 4vw + 1rem, 20px);
+    color: var(--c-terciario);
+    font-weight: 700;
+}
+.contacto{
+    display: flex;
+    min-height: 500px;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 10px;
+    flex-wrap: wrap;
+}
+.contact-item{
+    width: 150px;
+    height: 150px;
+    background-color:var(--bg-primario);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.377);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--c-primario);
+    font-size: 70px;
+    cursor: pointer;
+}
+.contact-item:hover{
+    background-color: var(--c-primario);
+    color: white;
+    box-shadow: 0 4px 10px 5px rgba(156, 0, 0, 0.377);
+    font-size: 80px;
+    transition: color, background-color,font-size ease-in 0.3s;
+}
+.contact-item:hover i{
+     background-color:transparent;
+     filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.342));
+    }
