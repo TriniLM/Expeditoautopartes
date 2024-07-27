@@ -8,6 +8,7 @@
     position: sticky;
     top: 0px;
     z-index: 11111;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.164);
 }
 .header__logo{
     padding: 10px;
@@ -36,6 +37,18 @@
     text-transform: uppercase;
     transition: all 0.5s ease;
     font-weight: 800;
+    position: relative;
+}
+.header__nav-items::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color:var(--c-terciario);
+    position: absolute;
+    transition: all ease-in-out 0.3s;
+}
+.header__nav-items:hover::after{
+    width: 100%;
 }
 .header__nav-items--active{
     color:var(--c-primario);

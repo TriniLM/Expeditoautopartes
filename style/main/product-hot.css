@@ -40,7 +40,7 @@ margin-bottom: 40px;
     justify-content: space-evenly;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.377);
-    background:var(--bg-secundario);
+    background:var(--c-cuarto);
 }
 .product-hot__img{
     padding: 20px;
@@ -74,11 +74,11 @@ margin-bottom: 40px;
     font-size: var(--fz-parrafo);
     font-family: var(--font-secundaria);
     margin-top: 10px;
-    color: var(--c-terciario);
+    color: var(--c-primario);
 }
 .product-hot__info-details span{
     font-family: var(--font-secundaria);
-    color: var(--c-cuarto);
+    color: var(--bg-secundario);
 }
 .product-hot__info-btn button{
     padding: 10px 20px;

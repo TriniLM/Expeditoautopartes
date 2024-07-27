@@ -68,4 +68,5 @@
     color: var(--bg-primario);
     font-weight: 600;
     font-size: 1rem;
+    transition: scale ease-out 0.3s;
 }
