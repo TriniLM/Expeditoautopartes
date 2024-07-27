@@ -6,6 +6,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 :root{
     --c-primario:#b60300;
     --c-secundario:#104789;
@@ -15,6 +16,19 @@
     --bg-secundario:#000b20;
     --font-primaria: "Raleway", sans-serif;;
     --font-secundaria: "Montserrat", sans-serif;
+    --fz-title:3.5rem;
+    --fz-subtitle:2rem;
+    --fz-parrafo:1.1rem;
+    --wd-whatsap:80px;
+}
+@media (max-width:760px) {
+    :root{
+        --fz-title:2.2rem;
+        --fz-subtitle:1.5rem;
+        --fz-parrafo:1rem;
+        --wd-whatsap:70px;
+
+    }
 }
 a{
     text-decoration: none;
@@ -30,8 +44,9 @@ body{
     position: fixed;
     z-index: 1111111;
     bottom: 30px;
-    right: 30px;
+    right: 20px;
 }
 .whatsapp-icon img{
-    width: 80px;
+    width:var(--wd-whatsap);
+    filter:drop-shadow( 5px 10px 10px rgba(0, 0, 0, 0.26));
 }

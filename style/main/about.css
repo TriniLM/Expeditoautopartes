@@ -7,6 +7,7 @@
     background-color: var(--bg-primario);
     flex-wrap: wrap;
     gap: 20px;
+    overflow: hidden;
 }
 .about-text{
     max-width: 400px;
@@ -28,7 +29,7 @@
 }
 .about-text__paragraph{
     font-family: var(--font-secundaria);
-    font-size: 1.1rem;
+    font-size: var(--fz-parrafo);
     color: var(--c-secundario);
     font-weight: 500;
 }
@@ -42,8 +43,8 @@
     font-size: 1rem;
 }
 .about-img{
-    max-width: 350px;
-    min-height: 350px;
+    width: 300px;
+    height: 300px;
     border-radius: 100%;
     overflow: hidden;
     background-color: rebeccapurple;

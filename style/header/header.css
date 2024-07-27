@@ -1,4 +1,5 @@
 .header{
+    overflow: hidden;
     max-width: 100vw;
     background-color: var(--bg-primario);
     display: flex;
@@ -46,23 +47,23 @@
 .header__nav-redes{
     display: flex;
     gap: 10px;
-    color: var(--c-cuarto);
+    color: var(--bg-primario);
     align-items: center;
 }
 .header__nav-redes i{
-    font-size: 30px;
-}
-.header__nav-redes .fa-square-whatsapp:hover{
-    color:#25D366;
-}
-.header__nav-redes .fa-square-instagram:hover{
-    color: #ee2a7b;
-}
-.header__nav-redes .fa-square-facebook:hover{
-    color: #1877f2;
-}
-.header__nav-redes__red{
+    width: 40px;
+    height: 40px;
     font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color:var(--c-cuarto);
+    transition:all ease 0.3s;
+}
+.header__nav-redes i:hover{
+    background-color:var(--c-secundario);
+    font-size: 30px;
 }
 .header__menu{
     display: none;

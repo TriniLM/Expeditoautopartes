@@ -2,6 +2,7 @@
     width: 100%;
     background-color: var(--bg-secundario);
     color: var(--bg-primario);
+    overflow: hidden;
 }
 .footer-info{
     display: flex;
@@ -16,12 +17,12 @@
     font-family: var(--font-secundaria);
 }
 .footer-info__section h3{
-    font-size: 1.6rem;
+    font-size: var(--fz-subtitle);
     margin-bottom: 10px;
     font-family: var(--font-primaria);
 }
 .footer-info__section-adress{
-    font-size: 1rem;
+    font-size:var(--fz-parrafo);
     position: relative;
 }
 .footer-info__section-adress::before{

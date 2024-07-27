@@ -1,6 +1,6 @@
 .shipping-info{
-    overflow: hidden;
-    max-width: 100%;
+    width: 100%;
+    overflow-x:clip;
     display: flex;
     padding:50px;
     justify-content: space-evenly;
@@ -13,17 +13,17 @@
   max-width: 430px;
   padding: 10px;
   position: relative;
-  z-index: 11111;
+  z-index: 1111;
 }
 .shipping-info__text-title{
-    font-size: 2rem;
+    font-size: var(--fz-title);
     font-family: var(--font-primaria);
     font-weight: 800;
     color: var(--bg-primario);
     text-transform:capitalize;
 }
 .shipping-info-text-subtitle{
-    font-size: 1.3rem;
+    font-size: var(--fz-subtitle);
     font-family: var(--font-primaria);
     color: var(--c-terciario);
     letter-spacing: 2px;
@@ -31,7 +31,7 @@
     font-weight: 700;
 }
 .shipping-info__text-paragraph{
-    font-size: 1.1rem;
+    font-size:var(--fz-parrafo);
     font-family: var(--font-secundaria);
     font-weight: 600;
     color: var(--bg-primario);
@@ -49,9 +49,8 @@
 }
 
 .shipping-info__img{
-    width: 700px;
+    max-width: 700px;
     height:auto;
-    padding-bottom: 50px;
     position: relative;
     z-index: 1111;
 }
@@ -69,4 +68,10 @@
     position: absolute;
     width: 100vw;
     z-index: 111;
+}
+
+@media (max-width:760px){
+    .shipping-info{
+        padding: 10px;
+    }
 }
