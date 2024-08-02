@@ -18,7 +18,7 @@ margin-bottom: 40px;
     font-family: var(--font-primaria);
     color: var(--bg-secundario);
     margin: 15px;
-    text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.171);
+    text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.068);
 }
 .product-hot__title span{
     color: var(--c-primario);
@@ -28,6 +28,7 @@ margin-bottom: 40px;
     font-family:var(--font-secundaria);
     font-size:var(--fz-parrafo);
     color:var(--bg-secundario);
+    font-weight: 500;
 }
 .product-hot-content{
     margin: auto;

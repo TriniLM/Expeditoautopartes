@@ -7,10 +7,9 @@
     align-items: start;
     justify-content: center;
     position: relative;
-
 }
 .catalogo-banner__img img{
-    width: 100%;
+    min-width: 100vw;
     object-fit: cover;
     aspect-ratio: 16/9;
     position: absolute;
@@ -44,8 +43,10 @@
 
 /*product nav style*/
 .catalogo-products{
+    max-width: 100vw;
     padding: 20px 10px;
     display: flex;
+    overflow:hidden;
 }
 .catalogo-products__nav-content{
     display: flex;
