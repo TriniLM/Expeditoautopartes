@@ -44,7 +44,7 @@ function functionObserver(element,functionEjecut) {
 }
 //funcion para obtener los datos
 const getData = async () =>{
-    let res = await fetch("../../json/catalogo.json");
+    let res = await fetch("https://cdn.jsdelivr.net/gh/TriniLM/dbEspedito@main/catalogo.json");
     let data = await res.json();
     return data;
 }
@@ -81,7 +81,3 @@ functionObserver(bandasIntersecting, bandasListProduct)
 functionObserver(casquilloIntersecting, casquilloListProduct)
 functionObserver(chapaIntersecting, chapaListProduct)
 })
-
-fetch("/json/catalogo.json")
-.then(res => res.json())
-.then(data => console.log(data))
