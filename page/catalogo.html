@@ -12,11 +12,6 @@
     <link rel="stylesheet" href="../style/main/catalogo.css">
 </head>
 <body>
-    <div class="whatsapp-icon">
-        <a href="https://wa.me/18097052885" target="_blank">
-            <img src="../img/whatsapp.png" alt="direccionar al whatsapp de Expedito Auto Parts">
-        </a>
-    </div>
     <header class="header" id="header">
         <figure class="header__logo">
             <img src="../img/Frame 1.png" alt="Logo Expedito Auto Partes" class="header__logo--img">
@@ -26,13 +21,13 @@
                 <a href="../index.html" class="header__nav-items header__nav-items--hover">
                     <li>Inicio</li>
                 </a>
-                <a href="../page/catalogo.html" class="header__nav-items header__nav-items--hover">
+                <a href="../page/catalogo.html" class="header__nav-items header__nav-items--active">
                     <li>Catálogo</li>
                 </a>
                 <a href="../page/nosotros.html" class="header__nav-items header__nav-items--hover">
                     <li>Nosotros</li>
                 </a>
-                <a href="../page/contacto.html" class="header__nav-items header__nav-items--active">
+                <a href="../page/contacto.html" class="header__nav-items header__nav-items--hover">
                     <li>Contactos</li>
                 </a>
             </ul>
@@ -56,8 +51,11 @@
                     <h2>Todo lo que Necesitas en <em>Transmisión y Guía Hidráulica</em></h2>
                 </div>
             </header>
-            <main class="catalogo-products">
-                <nav class="catalogo-products__nav">
+            <main class="catalogo-products" id="catalogoProduct">
+                <nav class="catalogo-products__nav" id="navCatalogo">
+                    <div class="catalogo-products__nav-btn" id="nav__btn-catalogo">
+                        <img src="../img/public/filterMenu.svg" alt="icono de filtro para el menu">
+                    </div>
                     <ul class="catalogo-products__nav-content">
                         <a href="#item1" class="nav-content__item">
                             <li>Item 1</li>
@@ -284,5 +282,7 @@
         </section>
     </footer>
     <script src="../source/menu_bar.js"></script>
+    <script src="../source/catalogoSorce/catalogo.js" type="module"></script>
+    <script src="../source/observerFunction.js" type="module"></script>
 </body>
 </html>
