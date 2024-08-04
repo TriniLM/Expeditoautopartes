@@ -81,3 +81,7 @@ functionObserver(bandasIntersecting, bandasListProduct)
 functionObserver(casquilloIntersecting, casquilloListProduct)
 functionObserver(chapaIntersecting, chapaListProduct)
 })
+
+fetch("/json/catalogo.json")
+.then(res => res.json())
+.then(data => console.log(data))
