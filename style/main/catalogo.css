@@ -47,127 +47,72 @@ body{
 }
 
 /*product nav style*/
-.catalogo-products{
-    max-width: 100%;
-    padding: 20px 10px;
-    display: flex;
-}
-.catalogo-products__nav{
-    width: 200px;
-    bottom: 20px;
-    position: fixed;
-    z-index: 1111;
-    display: flex;
-    flex-direction: column-reverse;
-    overflow: hidden;
-    transition: clip-path 0.3s ease-in;
-    clip-path: circle(60% at 1% 98%);
-    padding: 10px;
-    border-radius: 10px;
-}
-.nav__active{
-    clip-path: circle(139.2% at 1% 98%);
+.catalogo-list{
+    padding: 20px;
     background-color: var(--bg-primario);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);
-}
-.catalogo-products__nav-btn{
-    width: 60px;
-    height: 60px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.24);
-    border-radius: 100%;
-    background-color: var(--c-primario);
-    display: flex;
-    text-align: center;
-}
-.catalogo-products__nav-btn img{
-    width: 70%;
-    margin: auto;
-}
-.catalogo-products__nav-content{
-    width: 200px;
-    height: 400px;
-    display: none;
-    flex-direction: column;
-    gap:20px;
-    align-items: start;
-    z-index: 111;
-    top: -400px;
-}
-.nav__active .catalogo-products__nav-content{
-    display: flex;
-}
-.nav-content__item li{
-    font-size: 20px;
-    font-family: var(--font-primaria);
-    color: var(--bg-secundario);
-    font-weight: 600;
-    width: 100%;
-    height: 40px;
-    border-bottom: 1px solid black;
-}
-
-/*product*/
-.catalogo-products__content-product{
-    text-align: center;
-    padding: 10px 20px 120px 20px;
-}
-.catalogo-products__content-product h2{
-    font-size: var(--fz-title);
-    margin: 20px 10px;
-    font-family: var(--font-primaria);
-    color: var(--bg-primario);
-    border: 1px solid rgba(0, 0, 0, 0.164);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.199);
-    background-color: var(--c-primario);
-}
-.content-product__items-product{
-    width: 200px;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    padding: 10px;
-    transform: scale(0);
-    animation: itemsProduct 0.5s ease-in  forwards;
-
-}
-@keyframes itemsProduct {
-    0%{
-        transform: scale(0.1);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
-.content-product__items{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    align-items: center;
+    justify-content:space-evenly;
+    gap: 15px;
 }
-.items-product__img{
-    flex-basis: 50%;
-    text-align: center;
+.card-content{
+    width: 300px;
+    height: 200px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.336);
+    background-color: var(--c-primario);
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+    padding: 10px;
+    position:relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
 }
-.items-product__img img{
-   width: 90%;
-   object-fit: cover;
+.card-content::before{
+    content: "";
+    position: absolute;
+    width: 300px;
+    height:300px;
+    background-color:var(--bg-primario);
+    position: absolute;
+    top: 0px;
+    left: -140px;
+    rotate: -30deg;
+    z-index: 1;
+    transition: all ease 0.3s;
 }
-.items-product__title{
-    font-size: 13px;
-    font-family: var(--font-secundaria);
+.card-content__img{
+    margin: auto;
+    width: 80%;
+    transition: all ease-in-out 0.3s;
+    position: relative;
+    z-index: 11;
+}
+
+.card-content__img img{
+    width: 80%;
+    opacity: 0.9;
+}
+.card-content:hover::before{
+    left: -400px;
+}
+.card-content:hover .card-content__img{
+    scale: 1.2;
+    filter: drop-shadow(10px 25px 10px rgba(0, 0, 0, 0.315));
+}
+.card-content__title{
+    position: absolute;
+    z-index: 1111;
+    text-align: start;
     color: var(--c-secundario);
-    font-weight: 500;
+    font-weight: 900;
+    font-size:20px;
+    font-family: var(--font-primaria);
+    text-transform: uppercase;
+    bottom: 5px;
 }
-.items-product__btn{
-    padding: 3px 20px;
-    border: none;
-    background-color:var(--c-terciario);
+.card-content:hover .card-content__title{
     color: var(--bg-primario);
-    font-size: 15px;
-    font-weight: 600;
-    font-family: var(--font-secundaria);
-    margin-top:5px ;
 }

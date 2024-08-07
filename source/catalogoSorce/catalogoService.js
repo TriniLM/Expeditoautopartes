@@ -1,4 +1,4 @@
-window.addEventListener("load", async()=>{
+/*window.addEventListener("load", async()=>{
 // obeteniendo las categorias donde incrustaremos la lista de productos
 const bandas = document.getElementById("bandas");
 const casquillo = document.getElementById("casquillo");
@@ -27,7 +27,7 @@ const renderList = (name,description)=>{
                     <img src="../img/product-hot/200872.png" alt="${description}">
                      </figure>
                     <h3 class="items-product__title">${description}</h3>
-                    <a href="https://wa.me/18097052885?text=Hola, me interesaría saber más sobre: ${description}"> 
+                    <a href="https://wa.me/18097052885?text=Hola, me interesaría saber más sobre: ${description} https://trinilm.github.io/Expeditoautopartes/img/product-hot/200872.png" target"_black"> 
                     <button class="items-product__btn">Pedir</button>
                     </a>
                     `;
@@ -70,4 +70,4 @@ functionObserver(chapaIntersecting,()=> renderProduct(chapa,"CHAPAS"))
 functionObserver(convertidorIntersecting,()=> renderProduct(convertidor,"CONVERTIDOR"));
 functionObserver(discoMetalIntersecting,()=> renderProduct(discoMetal,"DISCO DE METAL"))
 console.log(product)
-})
+})*/
