@@ -1,197 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EAP-CATALOGO</title>
-    <script src="https://kit.fontawesome.com/11a7ca8e38.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/header/header.css">
-    <link rel="stylesheet" href="../style/footer/footer.css">
-    <link rel="stylesheet" href="../style/main/catalogo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EAP-CATALOGO</title>
+  <script src="https://kit.fontawesome.com/11a7ca8e38.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/header/header.css">
+  <link rel="stylesheet" href="../style/footer/footer.css">
+  <link rel="stylesheet" href="../style/main/catalogo.css">
 </head>
+
 <body>
-    <header class="header" id="header">
-        <figure class="header__logo">
-            <img src="../img/Frame 1.png" alt="Logo Expedito Auto Partes" class="header__logo--img">
+  <header class="header" id="header">
+    <figure class="header__logo">
+      <img src="../img/Frame 1.png" alt="Logo Expedito Auto Partes" class="header__logo--img">
+    </figure>
+    <nav class="header__nav">
+      <ul class="header__nav-content">
+        <a href="../index.html" class="header__nav-items header__nav-items--hover">
+          <li>Inicio</li>
+        </a>
+        <a href="../page/catalogo.html" class="header__nav-items header__nav-items--active">
+          <li>Catálogo</li>
+        </a>
+        <a href="../page/nosotros.html" class="header__nav-items header__nav-items--hover">
+          <li>Nosotros</li>
+        </a>
+        <a href="../page/contacto.html" class="header__nav-items header__nav-items--hover">
+          <li>Contactos</li>
+        </a>
+      </ul>
+      <div class="header__nav-redes">
+        <i class="fa-brands fa-square-facebook header__nav-redes__red"></i>
+        <i class="fa-brands fa-square-instagram header__nav-redes__red"></i>
+        <i class="fa-brands fa-square-whatsapp header__nav-redes__red"></i>
+      </div>
+    </nav>
+    <div class="header__menu" id="menu__bar">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </header>
+  <main role="main">
+    <section class="catalogo" >
+      <header class="catalogo-banner">
+        <figure class="catalogo-banner__img">
+          <img src="../public/categoria banner.png" alt="">
         </figure>
-        <nav class="header__nav">
-            <ul class="header__nav-content">
-                <a href="../index.html" class="header__nav-items header__nav-items--hover">
-                    <li>Inicio</li>
-                </a>
-                <a href="../page/catalogo.html" class="header__nav-items header__nav-items--active">
-                    <li>Catálogo</li>
-                </a>
-                <a href="../page/nosotros.html" class="header__nav-items header__nav-items--hover">
-                    <li>Nosotros</li>
-                </a>
-                <a href="../page/contacto.html" class="header__nav-items header__nav-items--hover">
-                    <li>Contactos</li>
-                </a>
-            </ul>
-            <div class="header__nav-redes">
-                <i class="fa-brands fa-square-facebook header__nav-redes__red"></i>
-                <i class="fa-brands fa-square-instagram header__nav-redes__red"></i>
-                <i class="fa-brands fa-square-whatsapp header__nav-redes__red"></i>
-            </div>
-        </nav>
-        <div class="header__menu" id="menu__bar">
-            <i class="fa-solid fa-bars"></i>
+        <div class="catalogo-banner__text">
+          <h2>¿Buscas la pieza perfecta?</h2>
+          <a href="#categorias"><button>Ve nuestras categorías</button></a>
         </div>
-    </header>
-    <main role="main">
-        <section class="catalogo">
-            <header class="catalogo-banner">
-                <figure class="catalogo-banner__img">
-                    <img src="../img/public/equipo expedito.jpg" alt="">
-                </figure>
-                <div class="catalogo-banner__text">
-                    <h2>Todo lo que Necesitas en <em>Transmisión y Guía Hidráulica</em></h2>
-                </div>
-            </header>
-           <section class="catalogo-list">         
-                    <article class="card-content">
-                      <figure class="card-content__img">
-                        <img src="../public/categoriaImg/bandasCategoria.png" alt="Bandas de transmision">
-                      </figure>
-                      <h2 class="card-content__title">Bandas</h2>
-                    </article> 
-                    <article class="card-content">
-                        <figure class="card-content__img">
-                          <img src="../public/categoriaImg/bandasCategoria.png" alt="Bandas de transmision">
-                        </figure>
-                        <h2 class="card-content__title">Casquillo</h2>
-                      </article>  
-                      <article class="card-content">
-                        <figure class="card-content__img">
-                          <img src="../public/categoriaImg/bandasCategoria.png" alt="Bandas de transmision">
-                        </figure>
-                        <h2 class="card-content__title">Chapa</h2>
-                      </article>  
-                      <article class="card-content">
-                        <figure class="card-content__img">
-                          <img src="../public/categoriaImg/convertidor de transmision.png" alt="Bandas de transmision">
-                        </figure>
-                        <h2 class="card-content__title">Convertidor</h2>
-                      </article>  
-                      <article class="card-content">
-                        <figure class="card-content__img">
-                          <img src="../public/categoriaImg/disco de metal.png" alt="Bandas de transmision">
-                        </figure>
-                        <h2 class="card-content__title">Disco De Metal</h2>
-                      </article>  
-                      <article class="card-content">
-                        <figure class="card-content__img">
-                          <img src="../public/categoriaImg/discos de pasta.png" alt="Bandas de transmision">
-                        </figure>
-                        <h2 class="card-content__title">Disco De Pasta</h2>
-                      </article>  
-                      <article class="card-content">
-                        <figure class="card-content__img">
-                          <img src="../public/categoriaImg/enfriador.png" alt="Bandas de transmision">
-                        </figure>
-                        <h2 class="card-content__title">Enfriador</h2>
-                      </article>  
-                      <article class="card-content">
-                        <figure class="card-content__img">
-                          <img src="../public/categoriaImg/filtro.png" alt="Bandas de transmision">
-                        </figure>
-                        <h2 class="card-content__title">Filtro</h2>
-                      </article>  
-                      <article class="card-content">
-                        <figure class="card-content__img">
-                          <img src="../public/categoriaImg/bandasCategoria.png" alt="Bandas de transmision">
-                        </figure>
-                        <h2 class="card-content__title">Juego de Anillas</h2>
-                      </article>  
-                      <article class="card-content">
-                        <figure class="card-content__img">
-                          <img src="../public/categoriaImg/bandasCategoria.png" alt="Bandas de transmision">
-                        </figure>
-                        <h2 class="card-content__title">Juego De Piston</h2>
-                      </article>
-                      <article class="card-content">
-                        <figure class="card-content__img">
-                          <img src="../public/categoriaImg/bandasCategoria.png" alt="Bandas de transmision">
-                        </figure>
-                        <h2 class="card-content__title">Juego de Sellos</h2>
-                      </article>  
-                      <article class="card-content">
-                        <figure class="card-content__img">
-                          <img src="../public/categoriaImg/bandasCategoria.png" alt="Bandas de transmision">
-                        </figure>
-                        <h2 class="card-content__title">Juntas</h2>
-                      </article>  
-                      <article class="card-content">
-                        <figure class="card-content__img">
-                          <img src="../public/categoriaImg/bandasCategoria.png" alt="Bandas de transmision">
-                        </figure>
-                        <h2 class="card-content__title">Pistones</h2>
-                      </article>
-                      <article class="card-content">
-                        <figure class="card-content__img">
-                          <img src="../public/categoriaImg/bandasCategoria.png" alt="Bandas de transmision">
-                        </figure>
-                        <h2 class="card-content__title">Retenedora</h2>
-                      </article>  
-                      <article class="card-content">
-                        <figure class="card-content__img">
-                          <img src="../public/categoriaImg/bandasCategoria.png" alt="Bandas de transmision">
-                        </figure>
-                        <h2 class="card-content__title">Selenoide</h2>
-                      </article>  
-                      <article class="card-content">
-                        <figure class="card-content__img">
-                          <img src="../public/categoriaImg/bandasCategoria.png" alt="Bandas de transmision">
-                        </figure>
-                        <h2 class="card-content__title">Sellos</h2>
-                      </article>  
+      </header>
+      <section class="catalogo-list" id="categorias">
+        <article class="card-category">
+          <figure class="card-category__img" >
+            <img src="../public/categoriaImg/bandasCategoria.png" alt="Nombre de la categoria">
+          </figure>
+          <div class="card-category__text-element">
+            <h3>BANDA</h3>
+            <button class="card-category__buttom" btn-category="BANDA">Ver producto</button>
+          </div>
+        </article>
+        <article class="card-category">
+          <figure class="card-category__img">
+            <img src="../public/categoriaImg/casquillos.png" alt="Nombre de la categoria">
+          </figure>
+          <div class="card-category__text-element">
+            <h3>CASQUILLO</h3>
+            <button class="card-category__buttom" btn-category="CASQUILLO">Ver producto</button>
+          </div>
+        </article>
+        <article class="card-category">
+          <figure class="card-category__img">
+            <img src="../public/categoriaImg/chapa caja de valvulas.png" alt="Nombre de la categoria">
+          </figure>
+          <div class="card-category__text-element">
+            <h3>CHAPA</h3>
+            <button class="card-category__buttom" btn-category="CHAPA">Ver producto</button>
+          </div>
+        </article>
+        <article class="card-category">
+          <figure class="card-category__img">
+            <img src="../public/categoriaImg/convertidor de transmision.png" alt="Nombre de la categoria">
+          </figure>
+          <div class="card-category__text-element">
+            <h3>CONVERTIDOR</h3>
+            <button class="card-category__buttom" btn-category="CONVERTIDOR">Ver producto</button>
+          </div>
+        </article>
+        <article class="card-category">
+          <figure class="card-category__img">
+            <img src="../public/categoriaImg/disco de metal.png" alt="Nombre de la categoria">
+          </figure>
+          <div class="card-category__text-element">
+            <h3>DISCO DE METAL</h3>
+            <button class="card-category__buttom" btn-category="DISCO DE METAL">Ver producto</button>
+          </div>
+        </article>
+        <article class="card-category">
+          <figure class="card-category__img">
+            <img src="../public/categoriaImg/discos de pasta.png" alt="Nombre de la categoria">
+          </figure>
+          <div class="card-category__text-element">
+            <h3>DISCO DE PASTA</h3>
+            <button class="card-category__buttom" btn-category="DISCO DE PASTA">Ver producto</button>
+          </div>
+        </article>
+        <article class="card-category">
+          <figure class="card-category__img">
+            <img src="../public/categoriaImg/enfriador.png" alt="Nombre de la categoria">
+          </figure>
+          <div class="card-category__text-element">
+            <h3>ENFRIADOR</h3>
+            <button class="card-category__buttom" btn-category="ENFRIADOR">Ver producto</button>
+          </div>
+        </article>
+        <article class="card-category">
+          <figure class="card-category__img">
+            <img src="../public/categoriaImg/filtro.png" alt="Nombre de la categoria">
+          </figure>
+          <div class="card-category__text-element">
+            <h3>FILTRO</h3>
+            <button class="card-category__buttom" btn-category="FILTRO">Ver producto</button>
+          </div>
+        </article>
+        <article class="card-category">
+          <figure class="card-category__img">
+            <img src="../public/categoriaImg/anillas.png" alt="Nombre de la categoria">
+          </figure>
+          <div class="card-category__text-element">
+            <h3>JUEGO DE ANILLAS</h3>
+            <button class="card-category__buttom" btn-category="JUEGO DE ANILLAS">Ver producto</button>
+          </div>
+        </article>
+        <article class="card-category">
+          <figure class="card-category__img">
+            <img src="../public/categoriaImg/piston.png" alt="Nombre de la categoria">
+          </figure>
+          <div class="card-category__text-element">
+            <h3>JUEGO DE PISTON</h3>
+            <button class="card-category__buttom" btn-category="JUEGO DE PISTON">Ver producto</button>
+          </div>
+        </article>
+        <article class="card-category">
+          <figure class="card-category__img">
+            <img src="../public/categoriaImg/juego de sellos.png" alt="Nombre de la categoria">
+          </figure>
+          <div class="card-category__text-element">
+            <h3>JUEGO DE SELLOS</h3>
+            <button class="card-category__buttom" btn-category="JUEGO DE SELLOS">Ver producto</button>
+          </div>
+        </article>
+        <article class="card-category">
+          <figure class="card-category__img">
+            <img src="../public/categoriaImg/juntas.png" alt="Nombre de la categoria">
+          </figure>
+          <div class="card-category__text-element">
+            <h3>JUNTAS</h3>
+            <button class="card-category__buttom" btn-category="JUNTAS">Ver producto</button>
+          </div>
+        </article>
+        <article class="card-category">
+          <figure class="card-category__img">
+            <img src="../public/categoriaImg/piston.png" alt="Nombre de la categoria">
+          </figure>
+          <div class="card-category__text-element">
+            <h3>PISTONES</h3>
+            <button class="card-category__buttom" btn-category="PISTONES">Ver producto</button>
+          </div>
+        </article>
+        <article class="card-category">
+          <figure class="card-category__img">
+            <img src="../public/categoriaImg/retenedora.png" alt="Nombre de la categoria">
+          </figure>
+          <div class="card-category__text-element">
+            <h3>RETENEDORA</h3>
+            <button class="card-category__buttom" btn-category="RETENEDORA">Ver producto</button>
+          </div>
+        </article>
+        <article class="card-category">
+          <figure class="card-category__img">
+            <img src="../public/categoriaImg/selenoide.png" alt="Nombre de la categoria">
+          </figure>
+          <div class="card-category__text-element">
+            <h3>SELENOIDE</h3>
+            <button class="card-category__buttom" btn-category="SELENOIDE">Ver producto</button>
+          </div>
+        </article>
+        <article class="card-category">
+          <figure class="card-category__img">
+            <img src="../public/categoriaImg/sellos.png" alt="Nombre de la categoria">
+          </figure>
+          <div class="card-category__text-element">
+            <h3>SELLOS</h3>
+            <button class="card-category__buttom" btn-category="SELLOS">Ver producto</button>
+          </div>
+        </article>
+      </section>
+  </main>
+  <footer class="footer">
+    <section class="footer-info">
+      <article class="footer-info__section">
+        <h3 class="footer-title ">Direccion</h3>
+        <address class="footer-info__section-adress">
+          Calle Juan Erazmo No.73, 10143. Villa Juana, Distrito Nacional SD
+        </address>
+      </article>
+      <article class="footer-info__section">
+        <h3 class="footer-title">Contacto</h3>
+        <p class="contact-number foo-contact"><a href="tel:8096876542">(809) 687-6542</a></p>
+        <p class="contact-number foo-contact"><a href="tel:8096876542"> (809) 687-6542</a></p>
+        <p class="contact-email foo-contact"><a
+            href="mailto:info@expeditoautopartes.com">info@expeditoautopartes.com</a></p>
+      </article>
+      <article class="footer-info__section">
+        <h3 class="footer-title">Horario</h3>
+        <p class="footer-info__section-houre"> Lunes a Viernes <br> 8:00 AM a 6:00 PM</p>
+      </article>
+    </section>
+    <section class="footer-foo">
+      <img class="footer-logo header__logo--img" src="../img/Frame 1.png" alt="">
+      <div class="footer-foo__copy">
+        <h3 class="footer-copy">&copy;Expedito Auto Partes</h3>
+        <a href="#">
+          <h4 class="footer-copy__creador">Creado por: GregoriDev</h4>
+        </a>
 
-           </section>
-    </main>
-    <footer class="footer">
-        <section class="footer-info">
-            <article class="footer-info__section">
-                <h3 class="footer-title ">Direccion</h3>
-                <address class="footer-info__section-adress">
-                    Calle Juan Erazmo No.73, 10143. Villa Juana, Distrito Nacional SD
-                </address>
-            </article>
-            <article class="footer-info__section">
-                <h3 class="footer-title">Contacto</h3>
-                <p class="contact-number foo-contact"><a href="tel:8096876542">(809) 687-6542</a></p>
-                <p class="contact-number foo-contact"><a href="tel:8096876542"> (809) 687-6542</a></p>
-                <p class="contact-email foo-contact"><a
-                        href="mailto:info@expeditoautopartes.com">info@expeditoautopartes.com</a></p>
-            </article>
-            <article class="footer-info__section">
-                <h3 class="footer-title">Horario</h3>
-                <p class="footer-info__section-houre"> Lunes a Viernes <br> 8:00 AM a 6:00 PM</p>
-            </article>
-        </section>
-        <section class="footer-foo">
-            <img class="footer-logo header__logo--img" src="../img/Frame 1.png" alt="">
-            <div class="footer-foo__copy">
-                <h3 class="footer-copy">&copy;Expedito Auto Partes</h3>
-                <a href="#">
-                    <h4 class="footer-copy__creador">Creado por: GregoriDev</h4>
-                </a>
-
-            </div>
-            <div class="footer-social">
-                <div class="header__nav-redes">
-                    <i class="fa-brands fa-square-facebook header__nav-redes__red"></i>
-                    <i class="fa-brands fa-square-instagram header__nav-redes__red"></i>
-                    <i class="fa-brands fa-square-whatsapp header__nav-redes__red"></i>
-                </div>
-            </div>
-        </section>
-    </footer>
-    <script src="../source/menu_bar.js"></script>
-    <script src="../source/catalogoSorce/catalogo.js" type="module"></script>
-    <script src="../source/observerFunction.js" type="module"></script>
-    <script src="../source/catalogoSorce/catalogoService.js"></script>
+      </div>
+      <div class="footer-social">
+        <div class="header__nav-redes">
+          <i class="fa-brands fa-square-facebook header__nav-redes__red"></i>
+          <i class="fa-brands fa-square-instagram header__nav-redes__red"></i>
+          <i class="fa-brands fa-square-whatsapp header__nav-redes__red"></i>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <script src="../source/menu_bar.js"></script>
+  <script src="../source/catalogoSorce/catalogo.js" type="module"></script>
+  <script src="../source/observerFunction.js" type="module"></script>
 </body>
+
 </html>
