@@ -84,12 +84,19 @@ html{
     cursor: pointer;
     user-select: none;
     transition: all ease-in-out 0.7s;
-    transform:translateX(-300px);
     opacity: 0;
 }
 .btn-category_visible{
-    transform: translateX(0px);
-    opacity: 1;
+    animation: traslateCard 0.7s ease-in-out  forwards;
+}
+@keyframes traslateCard {
+    0%{ opacity: 0;
+        transform:translateX(-300px);
+    }
+    100%{
+        opacity: 1;
+        transform:translateX(0px);
+    }
 }
 .card-category::before {
     content: "";

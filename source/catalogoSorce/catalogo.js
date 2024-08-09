@@ -6,7 +6,7 @@ window.addEventListener("load", () => {
     btnCategory.forEach((e) => {
         e.addEventListener("click", (e) => {
             let parameter = e.target.getAttribute('btn-category');
-            window.location.href = `../../page/categoriaList.html?categoria=${parameter}`;
+            window.location.href = `categoriaList.html?categoria=${parameter}`;
         })
     })
 
