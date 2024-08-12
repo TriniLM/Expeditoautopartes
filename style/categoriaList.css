@@ -1,0 +1,103 @@
+.products{
+    min-height: 600px;
+}
+.products-nav__list{
+    position: fixed;
+    background-color: var(--bg-primario);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.132);
+    height: 100%;
+    width: 200px;
+    z-index: 1111;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: var(--font-secundaria);
+    font-weight: 500;
+    transform: translateX(-200px);
+    transition: transform ease-in-out 0.5s;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color:var(--c-cuarto);
+}
+.products-nav__list-active{
+    transform: translateX(0px);
+}
+.products-nav__list-items{
+    cursor: pointer;
+}
+.products-nav__list-items:hover{
+    color: var(--c-primario);
+}
+.products-nav__btn{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 100%;
+    background-color: var(--c-primario);
+    color: var(--bg-primario);
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 11111;
+}
+.content-products{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+}
+.content-product__items-product{
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.153);
+    background-color:var(--bg-primario);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    opacity: 0;
+    transition: all ease-in-out .5s;
+}
+.card-product__active{
+    animation: traslateCards 0.9s ease-in-out forwards;
+ }
+ @keyframes traslateCards {
+    0%{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+ }
+.items-product__img{
+    width: 80%;
+    margin: auto;
+}
+.items-product__img img{
+    width: 100%;
+}
+.items-product__title{
+    font-family: var(--font-secundaria);
+    font-size: 1rem;
+    color: var(--c-secundario);
+}
+.items-product__btn{
+    width: 100%;
+    height: 25px;
+    background-color: var(--c-secundario);
+    border: none;
+    font-family: var(--font-secundaria);
+    font-weight: 600;
+    color: var(--bg-primario);
+    font-size: 15px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+.items-product__btn:hover{
+    background-color:#0a2f5b;
+}

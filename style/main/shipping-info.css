@@ -62,7 +62,7 @@
 }
 .shipping-wave{
     position: absolute;
-    bottom: -30px;
+    bottom: -20px;
     z-index: 111;
 }
 .shipping-mapa{
