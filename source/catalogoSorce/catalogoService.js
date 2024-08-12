@@ -24,18 +24,19 @@ const renderList = (name,description)=>{
     return li;
 }
 const renderProduct =(parent, categoria)=>{
-    if(categoria ==="TODAS"){
+    let categoriaElement = categoria === null || categoria === ""? "TODAS": categoria
+    if(categoriaElement === "TODAS"){
         product.catalogo.forEach(e =>{
             parent.appendChild(renderList(e.Categoría,e.Descripción))
         })
     }
     else{
         product.catalogo.filter(elem => {
-            if(elem.Categoría === categoria){
+            if(elem.Categoría === categoriaElement){
               parent.appendChild(renderList(elem.Categoría,elem.Descripción))
            }
     } 
- ) 
+ )
 }}
    renderProduct(catalogoContent,categoria); 
    let cardsProduct = document.querySelectorAll(".content-product__items-product");
