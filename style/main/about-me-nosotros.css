@@ -87,6 +87,7 @@
     flex-wrap: wrap;
 }
 .identity__conten-card{
+    min-width: 250px;
     max-width: 250px;
     background-color: white;
     border-radius: 20px;
@@ -104,6 +105,7 @@
     width: 100px;
     margin-top: 10px;
 }
+
 .conten-card__text{
     font-size: var(--fz-parrafo);
     margin: 10px 5px;
