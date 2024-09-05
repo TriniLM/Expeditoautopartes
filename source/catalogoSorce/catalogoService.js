@@ -9,14 +9,14 @@ window.addEventListener("load",async ()=>{
     }
     const product = await getData();
     //funcion para renderizar o dibujar la lista de productos
-const renderList = (name,description,image)=>{
+const renderList = (description,image)=>{
     let li = document.createElement("li");
     li.classList.add("content-product__items-product");
     let template = ` <figure class="items-product__img">
                     <img src= ${image? image:"../img/product-hot/200872.png"} alt="${description}">
                      </figure>
                     <h3 class="items-product__title">${description}</h3>
-                    <a href="https://wa.me/18097052885?text=Hola, me interesaría saber más sobre: ${description} https://trinilm.github.io/Expeditoautopartes/img/product-hot/200872.png" target"_black"> 
+                    <a href="https://wa.me/18297605867?text=Hola,%20me%20interesaría%20saber%20más%20sobre:%20${description}%20${image}" target="_blank">
                     <button class="items-product__btn">Más detalles</button>
                     </a>
                     `;
@@ -33,7 +33,7 @@ const renderProduct =(parent, categoria)=>{
     else{
         product.catalogo.filter(elem => {
             if(elem.Categoría === categoriaElement){
-              parent.appendChild(renderList(elem.Categoría,elem.Descripción, elem.img))
+              parent.appendChild(renderList(elem.Descripción, elem.img))
               console.log(elem.img)
            }
     } 

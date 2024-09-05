@@ -20,7 +20,6 @@
     border-radius: 100%;
     border: none;
     background-color: var(--bg-primario);
-    transition: background-color, border 0.3s ease;
 }
 .control__active{
     background-color:var(--c-primario);
@@ -31,16 +30,19 @@
     max-height: 500px;
     height: auto;
     display: flex;
-    align-items: ce;
-    transition: transform cubic-bezier(.02,.57,.63,.29) 1s;
+    align-items: center;
+    transition: transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 .slider__slide{
     min-width: 100%;
     height: 100%;
+    display: flex;
 }
 .slider__slide img{
     width: 100%;
+    min-height: 100%;
     object-fit: cover;
-    display: block;
+    aspect-ratio: 16/5;
 }
 
+/*estoy trabajando con la edicion del banner para optener el tama;o indicado para el mismo*/
