@@ -14,6 +14,10 @@
   padding: 10px;
   position: relative;
   z-index: 1111;
+  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55), 
+  opacity 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transform: scale(0.4);
+  opacity: 0;
 }
 .shipping-info__text-title{
     font-size: var(--fz-title);
@@ -56,7 +60,12 @@
     height:auto;
     position: relative;
     z-index: 1111;
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55), 
+    opacity 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transform: scale(0.4);
+    opacity: 0;
 }
+
 .shipping-info__img-imagen{
     width: 100%;
 }
@@ -71,6 +80,14 @@
     position: absolute;
     width: 100vw;
     z-index: 11;
+}
+
+/*animacion de elementos con una clase e intersection observer*/
+.animate-scale{
+    transition: transform 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55), 
+    opacity 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transform: scale(1);
+    opacity: 1;
 }
 
 @media (max-width:760px){
