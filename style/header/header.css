@@ -64,6 +64,7 @@
     align-items: center;
 }
 .header__nav-redes i{
+    cursor: pointer;
     width: 40px;
     height: 40px;
     font-size: 25px;

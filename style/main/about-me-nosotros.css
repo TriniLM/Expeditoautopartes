@@ -57,8 +57,10 @@
     gap: 2rem;
 }
 .lead__img-conten{
-    width: 250px;
-    height: 250px;
+    margin: auto;
+    display: flex;
+    width: 200px;
+    height: 200px;
     overflow: hidden;
     border-radius: 100%;
 }
