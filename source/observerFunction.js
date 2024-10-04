@@ -1,4 +1,4 @@
-export default function functionObserver(element,clase) {
+/*export default function functionObserver(element,clase) {
     // Definir el callback handleIntersect
     let handleIntersect = (entries, observer) => {
         if (entries[0].isIntersecting) {
@@ -14,4 +14,4 @@ export default function functionObserver(element,clase) {
     // Crear el observador
     let observer = new IntersectionObserver(handleIntersect, options);
     observer.observe(element);
-}
+}*/

@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 ::-webkit-scrollbar{
-    background-color:var(--bg-secundario);
+    background-color:transparent;
     width: 8px;
 }
 ::-webkit-scrollbar-thumb{

@@ -1,12 +1,8 @@
+
 .product-hot{
     width: 100%;
     background-color:var(--bg-primario);
     padding: 10px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     z-index: 111;
 }
 .product-hot__info-text{
@@ -31,56 +27,63 @@ margin-bottom: 40px;
     color:var(--bg-secundario);
     font-weight: 500;
 }
-.product-hot-content{
-    margin: auto;
-    width: 80%;
-    max-width: 1000px;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.377);
-    background:var(--c-cuarto);
+.product-hot-conteiner{
+  overflow-x: scroll;
+  margin: auto;
+  padding: 20px;
 }
-.product-hot__img{
-    padding: 20px;
+
+.product-hot-content{
+    display: grid;
+    grid-template-columns: repeat(10,300px);
+    gap: 20px;
+}
+.product-hot__card{
+    min-width: 300px;
+    max-width: 300px;
     border-radius: 20px;
-    text-align: center;
+    border: 1px solid rgb(234, 233, 233);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.073);
+    overflow: hidden;
+}
+
+.product-hot__img{
+    max-height: 200px;
+    min-height: 200px;
     flex-grow: 1;
-    background: linear-gradient(135deg, #f3f3f3 25%, transparent 25%) -50px 0,
-                        linear-gradient(225deg, #f3f3f3 25%, transparent 25%) -50px 0,
-                        linear-gradient(315deg, #f3f3f3 25%, transparent 25%),
-                        linear-gradient(45deg, #f3f3f3 25%, transparent 25%);
-                        background-color:#dbdbdb;
-    background-size: 100px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px;
+}
+.rotar{
+    max-height: 300px;
+    object-fit: contain;
 }
 .product-hot__img img{
     width: 70%;
     max-width: 300px;
-    border-radius: 10px;
 }
 .product-hot__info{
-    flex-grow: 1;   
     height: 100%;
     padding: 10px;
 }
 .product-hot__img-title{
-    font-size:1.5rem;
+    font-size:1rem;
     text-transform: uppercase;
-    font-family: var(--font-primaria);
-    color: var(--bg-primario);
+    font-family: var(--font-secundaria);
+    color: var(--c-secundario);
 }
 .product-hot__info-details h4{
     font-size: var(--fz-parrafo);
-    font-family: var(--font-secundaria);
+    font-family: var(--font-primaria);
     margin-top: 10px;
-    color: var(--c-primario);
+    color: var(--bg-secundario);
 }
 .product-hot__info-details span{
-    font-family: var(--font-secundaria);
-    color: var(--bg-secundario);
+    font-family: var(--font-primaria);
+    color: var(--c-cuarto);
 }
 .product-hot__info-btn button{
     padding: 10px 20px;
@@ -89,28 +92,17 @@ margin-bottom: 40px;
     color: var(--bg-primario);
     background-color: var(--c-primario);
     font-family: var(--font-primaria);
-    font-size: var(--fz-parrafo);
-    margin-top: 20px;
-    font-weight: 700;
+    margin-top:20px ; 
+    font-weight: 600;
 }
-.product-hot__btn{
-    position: absolute;
-    width: 100%;
-    z-index: 11;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+
+.product-hot-conteiner::-webkit-scrollbar{
+    background-color:var(--bg-secundario);
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
 }
-.product-hot__btn button{
-    width: 40px;
-    height: 80px;
+.product-hot-conteiner::-webkit-scrollbar-thumb{
+    background-color: rgba(128, 128, 128, 0.203);
     border-radius: 10px;
-    border: none;
-    background-color: var(--c-cuarto);
-    color: var(--bg-primario);
-    font-size: 30px;
-}
-.product-hot__btn button:hover{
-    background-color: var(--c-primario);
 }
