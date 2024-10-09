@@ -45,6 +45,7 @@
     flex-grow:0.2;
     transform: translateY(60px);
     opacity: 0;
+    border-radius: 10px;
 }
 .marcas-cards__card-img{
     width:auto;
