@@ -40,24 +40,42 @@ html{
     flex-direction: column;
 }
 
-.catalogo-banner__text h2 {
-    font-size: clamp(1rem, 5vw, 5rem); 
+.catalogo-banner__text strong {
+    font-size: clamp(1rem, 5vw, 3rem); 
     font-family: var(--font-primaria);
     font-weight: 800;
+    text-align: center;
 }
-
+.catalogo-banner__text strong span{
+    display: block;
+    color: var(--c-terciario);
+}
 .catalogo-banner__text button {
     font-family: var(--font-secundaria);
     font-size: 18px;
     font-weight: 700;
     text-align: center;
-    padding: 5px 15px;
-    border-radius: 20px;
+    border-radius: 100%;
     border: none;
-    color: var(--bg-primario);
-    background-color: var(--c-secundario);
+    color: var(--c-terciario);
+    background-color: var(--bg-primario);
     margin: 20px;
-   
+    width: 40px;
+    height: 40px; 
+    cursor: pointer;
+}
+.catalogo-banner__text button i{
+    rotate: 90deg;
+    font-size: 20px;
+}
+.catalogo-banner__text button:hover i{
+    rotate: 90deg;
+    font-size: 22px;
+    animation: topBottom 0.7s ease-in  infinite alternate;
+}
+@keyframes topBottom {
+    0%{transform: translateX(0px);}
+    100%{transform: translateX(5px);}
 }
 
 /*product nav style*/
