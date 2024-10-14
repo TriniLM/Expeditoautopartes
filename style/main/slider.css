@@ -1,7 +1,5 @@
 .slider{
     max-width: 100vw;
-    height: auto;
-    max-height: 600px;
     position: relative;
     overflow: hidden;
 }
@@ -27,22 +25,14 @@
 }
 .slider__slides{
     width: 100%;
-    min-height: 500px;
     height: auto;
     display: flex;
     transition: transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 .slider__slide{
     min-width: 100%;
-    min-height: 100%;
     display: flex;
-    background-color: red;
 }
 .slider__slide img{
     width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-    aspect-ratio: 16/5;
 }
-
-/*estoy trabajando con la edicion del banner para optener el tama;o indicado para el mismo*/

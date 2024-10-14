@@ -1,3 +1,4 @@
+
 // Obteniendo los elementos necesarios
 const slides = document.getElementById("slides");
 const slide = document.querySelectorAll(".slider__slide");

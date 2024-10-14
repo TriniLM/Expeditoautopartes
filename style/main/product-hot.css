@@ -46,6 +46,13 @@ margin: auto;
     border: 1px solid rgb(234, 233, 233);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.073);
     overflow: hidden;
+    opacity: 0;
+    scale: 0.1;
+    transition: all ease 0.5s;
+}
+.show-card-product{
+    opacity: 1;
+    scale: 1;
 }
 .product-hot__img{
     max-height: 200px;
@@ -66,17 +73,16 @@ margin: auto;
     max-width: 300px;
 }
 .product-hot__info{
-    height: 100%;
     padding: 10px;
 }
 .product-hot__img-title{
-    font-size:1rem;
+    font-size:0.9rem;
     text-transform: uppercase;
     font-family: var(--font-secundaria);
     color: var(--c-secundario);
 }
 .product-hot__info-details h4{
-    font-size: var(--fz-parrafo);
+    font-size:0.8rem;
     font-family: var(--font-primaria);
     margin-top: 10px;
     color: var(--bg-secundario);
@@ -84,6 +90,7 @@ margin: auto;
 .product-hot__info-details span{
     font-family: var(--font-primaria);
     color: var(--c-cuarto);
+    font-size: .8rem;
 }
 .product-hot__info-btn button{
     width: 100%;

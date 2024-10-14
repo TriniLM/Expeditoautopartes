@@ -13,7 +13,7 @@ const renderList = (description,image)=>{
     let li = document.createElement("li");
     li.classList.add("content-product__items-product");
     let template = ` <figure class="items-product__img">
-                    <img src= ${image? image:"../img/product-hot/200872.png"} alt="${description}">
+                    <img src= ${image? image:"https://res.cloudinary.com/dclgwdu77/image/upload/f_auto,q_auto/tlws4gsfbvstvjlzdfo5"} alt="${description}">
                      </figure>
                     <h3 class="items-product__title">${description}</h3>
                     <a href="https://wa.me/18297605867?text=Hola,%20me%20interesaría%20saber%20más%20sobre:%20${description}%20${image}" target="_blank">

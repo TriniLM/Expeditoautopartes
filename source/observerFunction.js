@@ -1,8 +1,11 @@
-export default function functionObserver(element,clase) {
+export default function functionObserver(element,clase, remove) {
     // Definir el callback handleIntersect
     let handleIntersect = (entries, observer) => {
         if (entries[0].isIntersecting) {
             element.classList.add(clase)
+        }
+        if(remove && !entries[0].isIntersecting){
+            element.classList.remove(clase)
         }
     };
     // Definir las opciones del IntersectionObserver

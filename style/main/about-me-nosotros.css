@@ -114,3 +114,9 @@
     font-family: var(--font-secundaria);
     text-align: justify;
 }
+    .conten-card__text-value::before{
+        content: "\f058";
+        font-family: "Font Awesome 5 Free";
+        margin-right: 5px;
+        color: var(--c-secundario); 
+    }
