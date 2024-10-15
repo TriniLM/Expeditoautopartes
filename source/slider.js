@@ -25,7 +25,7 @@ function btnActual(actual, anterior) {
 }
 // Función para iniciar el carrusel de imágenes
 function startSlideShow() {
-  return setInterval(traslateSlide, 5000);
+  return setInterval(traslateSlide, 10000);
 }
 // Iniciando el carrusel de imágenes
 let intervalo = startSlideShow();

@@ -20,7 +20,7 @@
     background-color: var(--bg-primario);
 }
 .control__active{
-    background-color:var(--c-primario);
+    background-color:var(--c-terciario);
     border: 2px solid var(--bg-primario);
 }
 .slider__slides{
@@ -35,4 +35,5 @@
 }
 .slider__slide img{
     width: 100%;
+    object-fit: cover;
 }
