@@ -46,7 +46,7 @@
     position: absolute;
     bottom: 40px;
     left: 40px;
-    z-index: 11;
+    z-index: 1111;
     font-family: var(--font-primaria);
     color: var(--bg-primario);
     background-color: transparent;
