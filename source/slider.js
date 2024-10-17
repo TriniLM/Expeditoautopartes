@@ -1,4 +1,5 @@
-
+window.addEventListener("load",()=>{
+  
 // Obteniendo los elementos necesarios
 const slides = document.getElementById("slides");
 const slide = document.querySelectorAll(".slider__slide");
@@ -15,7 +16,7 @@ function traslateSlide() {
   if (index === slide.length) {
     index = 0;
   }
-}
+};
 // Función para actualizar los botones de control
 function btnActual(actual, anterior) {
   controls[actual].classList.add("control__active");
@@ -39,3 +40,5 @@ controls.forEach((e) => {
     intervalo = startSlideShow();
   });
 });
+
+})

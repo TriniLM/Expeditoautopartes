@@ -1,4 +1,4 @@
-import functionObserver from "../observerFunction.js"
+import functionObserver from "../observerFunction.js";
 window.addEventListener("load",()=>{
   const productCard = document.querySelectorAll(".product-hot__card");
   const productConteiner = document.querySelector(".product-hot-conteiner");
@@ -17,7 +17,6 @@ window.addEventListener("load",()=>{
     });
   });
 productCard.forEach((e)=>{
-  console.log(e)
-  functionObserver(e,"show-card-product", true)
-})
+  functionObserver(e,"show-card-product", true);
+});
 });

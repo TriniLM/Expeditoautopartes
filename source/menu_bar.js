@@ -4,5 +4,5 @@ window.addEventListener("load", ()=>{
     menuBar.addEventListener("click",(e)=>{
     header.classList.toggle("header__menu-bar-active");
     console.log("menu")
-})
-})
+});
+});

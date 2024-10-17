@@ -22,7 +22,7 @@ const renderList = (description,image)=>{
                     `;
     li.innerHTML = template;
     return li;
-}
+};
 const renderProduct =(parent, categoria)=>{
     let categoriaElement = categoria === null || categoria === ""? "TODAS": categoria
     if(categoriaElement === "TODAS"){
@@ -34,14 +34,13 @@ const renderProduct =(parent, categoria)=>{
         product.catalogo.filter(elem => {
             if(elem.Categoría === categoriaElement){
               parent.appendChild(renderList(elem.Descripción, elem.img))
-              console.log(elem.img)
-           }
+           };
     } 
  )
-}}
+}};
    renderProduct(catalogoContent,categoria); 
    let cardsProduct = document.querySelectorAll(".content-product__items-product");
    cardsProduct.forEach((e)=>{
     functionObserver(e, "card-product__active")
    })
- }) 
+ });
