@@ -49,12 +49,12 @@
     z-index: 1111;
     font-family: var(--font-primaria);
     color: var(--bg-primario);
-    background-color: transparent;
-    border: solid 2px var(--bg-primario);
+    background-color: rgba(0, 0, 0, 0.171);
+    border: solid 1.5px var(--bg-primario);
     border-radius: 5px 10px;
     font-weight: 700;
-    backdrop-filter: blur(20px);
     cursor: pointer;
+    transition: color ease 0.3s, background-color ease 0.3s;
 }
 .slider__slide-btn:hover{
   background-color: var(--bg-primario);
