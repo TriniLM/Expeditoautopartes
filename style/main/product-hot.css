@@ -130,4 +130,8 @@ margin: auto;
     margin: 0px 5px;
     font-size: 15px;
     cursor: pointer;
+    transition: scale ease 0.3s;
+}
+.product-hot__btn button:hover{
+    scale: 1.3;
 }
